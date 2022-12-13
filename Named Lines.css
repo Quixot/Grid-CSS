@@ -1,0 +1,25 @@
+.container {
+    height: 100%; 
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end right-start] 1fr [right-end main-end];
+    grid-template-rows: [main-start] 40px [content-start right-start] auto [content-end right-end] 40px [main-end]; 
+}
+
+.header {
+    grid-column: main;
+}
+
+.menu {}
+
+.right {
+    grid-area: right;    
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-column: main;
+}
